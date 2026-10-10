@@ -145,9 +145,6 @@ tests/
 - **Needs a network for the extras.** Ace, Prettier and Emmet load from CDNs. Offline, or if the CDNs are blocked, the editors fall back to plain text areas and Format and Emmet are unavailable; everything else keeps working.
 - **Browser support.** Compressed share links need `CompressionStream` with `deflate-raw` (Chrome 103+, Firefox 113+, Safari 16.4+); older browsers create longer, uncompressed links, and cannot open compressed ones.
 
-## Credits
-
-[Ace](https://ace.c9.io/) (editor), [Prettier](https://prettier.io/) (formatting) and [Emmet](https://emmet.io/) (abbreviations), all loaded from a CDN.
 
 ## License
 
