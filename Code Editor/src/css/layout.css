@@ -1,0 +1,106 @@
+/* Page structure: layout primitives, header, the three-column grid, cards and footer. */
+
+.stack{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.tools{
+    justify-content:flex-end;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:8px;
+}
+
+
+header{
+  background:var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.container{
+    max-width: 1516px;
+    margin-inline: auto;
+    padding: 14px 18px;
+    justify-content:space-between;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.title{
+    font-size: clamp(18px, 2vw, 22px)
+}
+
+.toolbar{
+    margin-inline-start:auto;
+    justify-content:flex-end;
+    gap:8px;
+}
+
+
+main{
+    max-width: 1516px;
+    margin-inline: auto;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr) 320px;
+    gap: var(--gap);
+}
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius:var(--radius);
+}
+
+.panel{
+    padding:18px
+}
+
+.card.panel.stack{
+    gap:20px;
+}
+
+.notes{
+    margin:0;
+    padding-inline-start:18px;
+}
+
+
+.site-footer{
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer-links{
+  display:flex;
+  gap:18px;
+}
+
+.footer-links a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.footer-links a:hover{
+  color:var(--txt);
+  text-decoration:underline;
+}

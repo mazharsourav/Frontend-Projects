@@ -1,0 +1,29 @@
+/* Design tokens. Everything else reads these, so a theme is just another set of values. */
+:root{
+    --bg:#161616;
+    --surface:#1e1e1e;
+    --line:#333;
+    --muted:#9a9a9a;
+    --faint:#7a7a7a;
+    --txt:#dcdcdc;
+    --hover:#262626;
+    --sel:#3a3a3a;
+    --radius:16px;
+    --gap:16px;
+    --control:36px;
+    --chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%23dcdcdc' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    color-scheme: dark;
+}
+
+:root[data-theme="light"]{
+    --bg:#ececec;
+    --surface:#f4f4f4;
+    --line:#cdcdcd;
+    --muted:#5f5f5f;
+    --faint:#7a7a7a;
+    --txt:#222;
+    --hover:#e0e0e0;
+    --sel:#cfcfcf;
+    --chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%23222222' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    color-scheme: light;
+}

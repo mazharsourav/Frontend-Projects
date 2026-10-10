@@ -1,0 +1,18 @@
+/* The live preview frame. It stays white: it shows the student's page, not the editor UI. */
+.preview-wrap{
+  block-size:380px;
+  min-block-size:200px;
+  resize:vertical;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:white;
+}
+
+iframe.preview{
+  display:block;
+  inline-size:100%;
+  block-size:100%;
+  border:0;
+  background:white
+}

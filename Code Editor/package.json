@@ -1,0 +1,14 @@
+{
+  "name": "code-editor",
+  "version": "1.0.0",
+  "description": "A tiny in-browser HTML/CSS/JS editor with live preview, shareable links and auto-graded exercises.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

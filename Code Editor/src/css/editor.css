@@ -1,0 +1,77 @@
+/* The code editors: the resizable frame, the Ace theme overrides and the text-area fallback. */
+
+.editor-wrap{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  block-size:380px;
+  min-block-size:200px;
+  resize:vertical;
+  background:var(--bg)
+}
+
+/* Ace injects its theme CSS at runtime; the #webEditors prefix outranks it. */
+#webEditors .ace-dracula,
+#webEditors .ace-dracula .ace_gutter{
+  background:var(--bg);
+}
+
+#webEditors .ace-dracula{
+  color:var(--txt);
+}
+
+#webEditors .ace-dracula .ace_gutter{
+  color:var(--muted);
+}
+
+#webEditors .ace-dracula .ace_marker-layer .ace_active-line,
+#webEditors .ace-dracula .ace_gutter-active-line{
+  background:var(--hover);
+}
+
+#webEditors .ace-dracula .ace_cursor{
+  color:var(--txt);
+}
+
+#webEditors .ace-dracula .ace_marker-layer .ace_selection{
+  background:var(--sel);
+}
+
+#webEditors .ace-dracula .ace_line span{
+  color:var(--txt);
+}
+
+#webEditors .ace-dracula .ace_line .ace_keyword,
+#webEditors .ace-dracula .ace_line .ace_storage,
+#webEditors .ace-dracula .ace_line .ace_meta{
+  font-weight:700;
+}
+
+#webEditors .ace-dracula .ace_line .ace_string,
+#webEditors .ace-dracula .ace_line .ace_constant{
+  color:var(--muted);
+}
+
+#webEditors .ace-dracula .ace_line .ace_comment{
+  color:var(--faint);
+  font-style:italic;
+}
+
+.editor{
+  inline-size:100%;
+  block-size:100%;
+}
+
+textarea.text.fallback-editor{
+  inline-size:100%;
+  block-size:100%;
+  min-height:0;
+  border:0;
+  border-radius:0;
+  resize:none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Cascadia Code", monospace;
+  font-size:14px;
+  line-height:1.5;
+  tab-size:2;
+}

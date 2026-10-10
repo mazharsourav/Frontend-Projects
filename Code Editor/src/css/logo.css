@@ -1,0 +1,18 @@
+/* The </> mark. Inline SVG, so it follows the theme through the tokens. */
+.logo{
+    display:block;
+    inline-size:36px;
+    block-size:36px;
+}
+
+.logo-bg{
+    fill:var(--txt);
+}
+
+.logo-glyph{
+    fill:none;
+    stroke:var(--bg);
+    stroke-width:5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}

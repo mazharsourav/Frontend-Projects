@@ -1,0 +1,26 @@
+/* Breakpoints. Loaded last so these overrides always win over the base rules. */
+@media (max-width: 1200px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px){
+    .container,
+    main{
+        padding:12px;
+    }
+    .panel{
+        padding:12px;
+    }
+    .toolbar{
+        justify-content:flex-start;
+        gap:6px;
+    }
+    .toolbar .btn{
+        padding:0 10px;
+    }
+    .editor-wrap{
+        block-size:300px;
+    }
+}
